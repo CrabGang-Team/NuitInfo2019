@@ -38,9 +38,13 @@
 				<img src="../assets/logo.png" alt="Logo de la page">
 			</div>
 			<div id="links" class="">
-				<a href="#" class="link">Features</a>
-				<a href="#" class="link">Feedback</a>
-				<a href="#" id="dl_app">Download app</a>
+				<a href="#" class="link">Forum</a>
+				<a href="#" class="link">Chat</a>
+				<div id="dl_app">
+					<a href="#" class="mr-2">Connexion</a>
+					<div id="separator"></div>
+					<a href="#" class="ml-2">Insciption</a>
+				</div>
 			</div>
 		</div>
 	</header>
