@@ -70,6 +70,8 @@
 
 	<main>
 
+		<div id="help">?</div>
+
 		<div id="image_header">
 			<img src="../assets/image.jpg" alt="main image header">
 			<div id="caption_image">
@@ -81,6 +83,9 @@
 				</div>
 			</div>
 		</div>
+
+		
+
 		<h1 id="title_content">Nos derniers postes</h1>
 
 		<div class="container-fluid pt-4 mb-5">
