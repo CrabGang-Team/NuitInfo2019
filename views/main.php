@@ -51,7 +51,7 @@
 				<div id="dl_app">
 					<a href="#" class="mr-2">Connexion</a>
 					<div id="separator"></div>
-					<a href="#" class="ml-2">Insciption</a>
+					<a href="#" class="ml-2">Inscription</a>
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 			<a href="#" class="link">Forum</a>
 			<a href="#" class="link">Chat</a>
 			<a href="#" class="link">Connexion</a>
-			<a href="#" class="link">Insciption</a>
+			<a href="#" class="link">Inscription</a>
 		</div>
 	</div>
 	
@@ -79,12 +79,12 @@
 				<p>Vous êtes en état de précarité ?<br>Venez chercher de l'aide parmis nos conseillés</p>
 				<div id="buttons_image">
 					<a href="#">► Aller au forum</a>
-					<a href="#">Poser une question</a>
+					<a href="#">Foire aux questions</a>
 				</div>
 			</div>
 		</div>
 
-		
+
 
 		<h1 id="title_content">Nos derniers postes</h1>
 
@@ -142,7 +142,7 @@
 				<h1>Poser vos questions et un conseillez vous repondra.</h1>
 				<div id="buttons_footer" class="mt-4">
 					<a href="#">► Aller au forum</a>
-					<a href="#">Poser une question</a>
+					<a href="#">Foire aux questions</a>
 				</div>
 			</div>
 		</div>
