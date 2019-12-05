@@ -35,7 +35,7 @@
 	<header>
 		<div id="content_header" class="">
 			<div id="logo" class="">
-				<img src="../assets/logo.png" alt="Logo de la page">
+				<span><a href="#">Precarite.io</a></span>
 			</div>
 			<div id="links" class="">
 				<a href="#" class="link">Forum</a>
@@ -53,16 +53,15 @@
 		<div id="image_header">
 			<img src="../assets/image.jpg" alt="main image header">
 			<div id="caption_image">
-				<h1>Nuit de l'info 2019</h1>
-				<h2>Crab'Gang++</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<h1>Precarite.io</h1>
+				<p>Vous êtes en état de précarité ?<br>Venez chercher de l'aide parmis nos conseillés</p>
 				<div id="buttons_image">
-					<a href="#">Previous project</a>
-					<a href="#">► Watch a video</a>
+					<a href="#">► Aller au forum</a>
+					<a href="#">Poser une question</a>
 				</div>
 			</div>
 		</div>
-		<h1 id="title_content">Big plus to your productivity</h1>
+		<h1 id="title_content">Nos derniers postes</h1>
 
 		<div class="container-fluid pt-4 mb-5">
 			<div class="row justify-content-center">
@@ -138,14 +137,9 @@
 
 		<div id="footer">
 			<div class="footer_flex">
-				© Crab'Gang
+					<span><a href="#">Precarite.io</a></span>
+				
 			</div>
-			<div class="footer_flex">
-				<div id="logo_footer" class="mx-auto">
-					<img src="../assets/logo.png" alt="logo footers">
-				</div>
-			</div>
-
 			<div class="footer_flex text-right">
 				<a href="#">Privacy</a>
 			</div>

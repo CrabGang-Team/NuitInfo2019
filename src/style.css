@@ -31,15 +31,13 @@ header{
 	align-items: flex-start;
 	justify-content: space-between;
 }
-#logo{
-	width: 50px;
-	height: 50px;
-	overflow: hidden;
-}
-#logo img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;	
+#logo span{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	background: -webkit-linear-gradient(135deg, #4376A1, #23487B);
+  	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
 }
 #links{
 	display: flex;
@@ -76,7 +74,7 @@ header{
 #separator{
 	width: 2px;
 	height: 30px;
-	background-color: #0056B3;
+	background-color: #32a8f3;
 	border-radius: 5px;
 }
 .link{
@@ -116,7 +114,8 @@ main::after{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: opacity(80%);
+	filter: opacity(80%) brightness(20%);
+
 }
 #caption_image{
 	position: absolute;
@@ -133,7 +132,7 @@ main::after{
 	color: white;
 	font-family: "Montserrat light", sans-serif;
 	font-size: 25px;
-	width: 450px;
+	width: 600px;
 	margin-top: 35px;
 	font-weight: 300;
 	margin-bottom: 50px;
@@ -284,14 +283,10 @@ main::after{
 	margin: 0 auto;
 }
 #logo_footer{
-	width: 30px;
+	width: 500px;
+	background-color: black;
 	height: 30px;
-	overflow: hidden;
-}
-#logo_footer img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	text-align: center;
 }
 .footer_flex{
 	width: calc(100%/3);
