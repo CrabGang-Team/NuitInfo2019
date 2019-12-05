@@ -57,6 +57,9 @@ header{
 	text-decoration: none;
 	letter-spacing: 1px;
 }
+#toggle-navbar{
+	display: none;
+}
 
 #dl_app{
 	background-color: rgba(0, 255, 255, .1);
@@ -137,7 +140,7 @@ main::after{
 	font-weight: 300;
 	margin-bottom: 50px;
 }
-#buttons_image a{
+#buttons_image a, #buttons_footer a{
 	padding: 10px 20px;
 	color: white;
 	font-family: "Montserrat", sans-serif;
@@ -148,7 +151,7 @@ main::after{
 	text-decoration: none;
 	-webkit-transition: background-color .3s;
 }
-#buttons_image a:hover{
+#buttons_image a:hover #buttons_footer a:hover{
 	background-color: rgba(255,255,255,.2);
 	border: 1px solid rgba(255,255,255,.8);
 	-webkit-transition: all .3s;
@@ -290,4 +293,42 @@ main::after{
 }
 .footer_flex{
 	width: calc(100%/3);
+}
+
+
+@media screen and (max-width: 900px){
+
+	#links{
+		display: none;
+	}
+
+	#toggle-navbar{
+		display: inline-block;
+	}
+
+	#navbar{
+		margin-top: -50px;
+		margin-bottom: 50px;
+	}
+
+	#caption_image p{
+		width: 90%;
+	}
+	#buttons_image a{
+		font-size: 1.7vw;
+
+	}
+
+
+
+	#text_footer{
+		width: 100%;
+	}
+	#text_footer h1{
+		font-size: 4vw;
+	}
+	#footer_color{
+		height: 220px;
+	}
+
 }

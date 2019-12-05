@@ -10,7 +10,11 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	
-	<!-- Fonts -->
+	<!-- Clarity -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" /> -->
+
+	<!-- Font awesome -->
+	<script src="https://kit.fontawesome.com/7796a3bf49.js" crossorigin="anonymous"></script>
 
 	<!-- Personal -->
 	<link rel="stylesheet" href="../src/style.css">
@@ -37,6 +41,10 @@
 			<div id="logo" class="">
 				<span><a href="#">Precarite.io</a></span>
 			</div>
+			
+			<a class="btn btn-primary" id="toggle-navbar" data-toggle="collapse" href="#navbar" role="button" aria-expanded="false" aria-controls="navbar">
+				<i class="fas fa-bars"></i>
+			</a>
 			<div id="links" class="">
 				<a href="#" class="link">Forum</a>
 				<a href="#" class="link">Chat</a>
@@ -47,9 +55,21 @@
 				</div>
 			</div>
 		</div>
+
 	</header>
 
+	<div class="collapse" id="navbar">
+		<div class="card card-body">
+			<a href="#" class="link">Forum</a>
+			<a href="#" class="link">Chat</a>
+			<a href="#" class="link">Connexion</a>
+			<a href="#" class="link">Insciption</a>
+		</div>
+	</div>
+	
+
 	<main>
+
 		<div id="image_header">
 			<img src="../assets/image.jpg" alt="main image header">
 			<div id="caption_image">
@@ -115,7 +135,7 @@
 		<div id="footer_color">
 			<div id="text_footer">
 				<h1>Poser vos questions et un conseillez vous repondra.</h1>
-				<div id="buttons_image" class="mt-4">
+				<div id="buttons_footer" class="mt-4">
 					<a href="#">► Aller au forum</a>
 					<a href="#">Poser une question</a>
 				</div>
