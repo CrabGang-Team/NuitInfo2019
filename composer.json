@@ -1,0 +1,6 @@
+{
+    "name": "crabgang/nuit_info2019",
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    }
+}
