@@ -65,7 +65,7 @@
 
 		<div class="container-fluid pt-4 mb-5">
 			<div class="row justify-content-center">
-				<div class="col-lg-6 col-xl-4 col-md-8 col-11 mr-5 card">
+				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
 					<div class="card-content">
 						<div class="decoration"></div>
 						<div class="content">
@@ -77,7 +77,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-xl-4 col-md-8 col-11 card ml-5">
+				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
 					<div class="card-content">
 						<div class="decoration"></div>
 						<div class="content">
@@ -89,22 +89,7 @@
 						</div>
 					</div>
 				</div>
-
-			</div>
-			<div class="row justify-content-center mt-5">
-				<div class="col-lg-6 col-xl-4 col-md-8 col-11 mr-5 card">
-					<div class="card-content">
-						<div class="decoration"></div>
-						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
-							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-xl-4 col-md-8 col-11 card ml-5">
+				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
 					<div class="card-content">
 						<div class="decoration"></div>
 						<div class="content">
@@ -117,7 +102,9 @@
 					</div>
 				</div>
 
+
 			</div>
+			
 		</div>
 
 	</main>
@@ -127,18 +114,17 @@
 	<footer>
 		<div id="footer_color">
 			<div id="text_footer">
-				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing sunt</h1>
+				<h1>Poser vos questions et un conseillez vous repondra.</h1>
 				<div id="buttons_image" class="mt-4">
-					<a href="#">Previous project</a>
-					<a href="#">► Watch a video</a>
+					<a href="#">► Aller au forum</a>
+					<a href="#">Poser une question</a>
 				</div>
 			</div>
 		</div>
 
 		<div id="footer">
 			<div class="footer_flex">
-					<span><a href="#">Precarite.io</a></span>
-				
+				<a href="#">Precarite.io</a>
 			</div>
 			<div class="footer_flex text-right">
 				<a href="#">Privacy</a>
