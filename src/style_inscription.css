@@ -10,6 +10,13 @@ body{
 	background-color: white;
 }
 
+#tmp{
+	width: 90%;
+}
+form{
+	margin: 0 auto;
+}
+
 
 
 /* Form part */
@@ -129,4 +136,20 @@ body{
 .indicator-active{
 	background-color: white;
 	opacity: 1;
+}
+
+.clr-input-wrapper{
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px){
+	.form-part{
+		margin: 0 auto;
+		width: 75%;
+	}
+	.image{
+		display: none;
+	}
+
+
 }

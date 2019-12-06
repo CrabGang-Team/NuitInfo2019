@@ -23,70 +23,70 @@
 <body>
 	<div class="container-fluid main">
 		<div class="form-part">
-			<div class="form" >
-				<h1>Inscription</h1>
+			<div class="form" id="tmp">
+				<h1 class="mb-3 text-center">Inscription</h1>
 				<form clrForm clrLayout="Horizontal" method='post' action="./includes/connection.inc.php" onSubmit="return validate()">
-			    <div>
-			      <clr-input-container>
+			    <div style="width: 100%;">
+			      <clr-input-container style="width: 100%;">
 			        <label><clr-icon shape="user"></clr-icon></label>
-			        <div class="clr-control-container">
-			          <div class="clr-input-wrapper">
-			            <input clrinput="" name="nom" placeholder="Nom" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
+			        <div class="clr-control-container" style="width: 100%;">
+			          <div class="clr-input-wrapper" style="width: 100%;">
+			            <input clrinput=""  style="width: 100%;" name="nom" placeholder="Nom" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
 			          </div>
 			        </div>
 			      </clr-input-container>
 			    </div>
-			    <div>
+			    <div style="width: 100%;">
 			      <clr-input-container>
 			        <label><clr-icon shape="user" class="is-solid"></clr-icon></label>
-			        <div class="clr-control-container">
-			          <div class="clr-input-wrapper">
-			            <input clrinput="" name="prenom" placeholder="Prenom" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
+			        <div class="clr-control-container" style="width: 100%;">
+			          <div class="clr-input-wrapper" style="width: 100%;">
+			            <input clrinput=""  style="width: 100%;" name="prenom" placeholder="Prenom" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
 			          </div>
 			        </div>
 			      </clr-input-container>
 			    </div>
-			    <div>
+			    <div style="width: 100%;">
 			      <clr-input-container>
 			        <label><clr-icon shape="envelope"></clr-icon></label>
-			        <div class="clr-control-container">
-			          <div class="clr-input-wrapper">
-			            <input clrinput="" name="email" placeholder="Email" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
+			        <div class="clr-control-container" style="width: 100%;">
+			          <div class="clr-input-wrapper" style="width: 100%;">
+			            <input clrinput=""  style="width: 100%;" name="email" placeholder="Email" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
 			          </div>
 			        </div>
 			      </clr-input-container>
 			    </div>
-			    <div>
+			    <div style="width: 100%;">
 			      <clr-input-container>
 			        <label><clr-icon shape="home"></clr-icon></label>
-			        <div class="clr-control-container">
-			          <div class="clr-input-wrapper">
-			            <input clrinput="" name="code_postal" placeholder="Code postal" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
+			        <div class="clr-control-container" style="width: 100%;">
+			          <div class="clr-input-wrapper" style="width: 100%;">
+			            <input clrinput=""  style="width: 100%;" name="code_postal" placeholder="Code postal" class="clr-input ng-pristine ng-valid ng-touched" id="clr-form-control-191" required>
 			          </div>
 			        </div>
 			      </clr-input-container>
 			    </div>
-			    <div>
+			    <div style="width: 100%;">
 			      <clr-input-container>
 			        <label><clr-icon shape="lock"></clr-icon></label>
-			        <div class="clr-control-container">
-			          <div class="clr-input-wrapper">
-			            <input clrpassword="" id="password" name="password" placeholder="mot de passe" type="password" aria-describedby="clr-form-control-194-helper" class="clr-input ng-valid ng-touched ng-dirty" id="clr-form-control-194" required>
+			        <div class="clr-control-container" style="width: 100%;">
+			          <div class="clr-input-wrapper" style="width: 100%;">
+			            <input clrpassword=""  style="width: 100%;" id="password" name="password" placeholder="mot de passe" type="password" aria-describedby="clr-form-control-194-helper" class="clr-input ng-valid ng-touched ng-dirty" id="clr-form-control-194" required>
 			          </div>
 			        </div>
 			      </clr-input-container>
 			    </div>
-			    <div>
+			    <div style="width: 100%;">
 			      <clr-input-container>
 			        <label><clr-icon shape="lock" class="is-solid"></clr-icon></label>
-			        <div class="clr-control-container">
-			          <div class="clr-input-wrapper">
-			            <input clrpassword="" id="passwordConfirm" placeholder="Confirmer mot de passe" type="password" aria-describedby="clr-form-control-194-helper" class="clr-input ng-valid ng-touched ng-dirty" id="clr-form-control-194" required>
+			        <div class="clr-control-container" style="width: 100%;">
+			          <div class="clr-input-wrapper" style="width: 100%;">
+			            <input clrpassword="" style="width: 100%;" id="passwordConfirm" placeholder="Confirmer mot de passe" type="password" aria-describedby="clr-form-control-194-helper" class="clr-input ng-valid ng-touched ng-dirty" id="clr-form-control-194" required>
 			          </div>
 			        </div>
 			      </clr-input-container>
 			    </div>
-					<button class="btn btn-outline" type="submit">Valider</button>
+					<button class="btn btn-outline" type="submit" style="width: 100%">Valider</button>
           <div><h5>En vous inscrivant vous accepter le stockage et le traitement de vos données par les administrateurs du site. </h5></div>
 			</form>
 			</div>

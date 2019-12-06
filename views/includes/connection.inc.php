@@ -3,7 +3,7 @@ require __DIR__ . "/db_connection.php";
 if (isset($_SESSION['id'])) {
   $typeAlert="warning";
   $messageAlert="Vous êtes déjà connecté";
-  header("Location: ../main.php");
+  header("Location: ../../");
   exit();
 } else if (isset($_POST['nom'])) {
   $nom = $_POST['nom'];
@@ -23,8 +23,9 @@ if (isset($_SESSION['id'])) {
 
   $response->execute();
   $id = $db->query('SELECT id FROM user order by id desc limit 1');
+  session_start();
   $_SESSION['id'] = $id->fetch(PDO::FETCH_ASSOC)["id"];
-  header("Location: ../main.php");
+  header("Location: ../../");
   exit();
 }
 

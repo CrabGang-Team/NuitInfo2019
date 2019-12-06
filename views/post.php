@@ -37,19 +37,22 @@
 	<header>
 		<div id="content_header" class="">
 			<div id="logo" class="">
-				<span><a href="../index.php">Precarite.io</a></span>
+				<span><a href="../">Precarite.io</a></span>
 			</div>
-			
+
 			<a class="btn btn-primary" id="toggle-navbar" data-toggle="collapse" href="#navbar" role="button" aria-expanded="false" aria-controls="navbar">
 				<i class="fas fa-bars"></i>
 			</a>
 			<div id="links" class="">
-				<a href="./forum.php" class="link">Forum</a>
-				<a href="./chat.php" class="link">Chat</a>
-				<div id="dl_app">
-					<a href="#" class="mr-2">Connexion</a>
-					<div id="separator"></div>
-					<a href="#" class="ml-2">Inscription</a>
+				<a href="forum.php" class="link">Forum</a>
+				<div id="dl_app" class="mt-1">
+					<?php if(!isset($_SESSION["id"])){ ?>
+						<a href="connexion.php" class="mr-2">Connexion</a>
+						<div id="separator"></div>
+						<a href="inscription.php" class="ml-2">Inscription</a>
+					<?php }else{ ?>
+						<a href="deconnection.php" class="mr-2">Deconnection</a>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
@@ -58,9 +61,14 @@
 
 	<div class="collapse" id="navbar">
 		<div class="card card-body">
-			<a href="#" class="link">Chat</a>
-			<a href="#" class="link">Connexion</a>
-			<a href="#" class="link">Inscription</a>
+			<a href="./forum.php" class="link">Forum</a>
+			<?php if(!isset($_SESSION["id"])){ ?>
+			<a href="./connexion.php" class="link">Connexion</a>
+			<a href="./inscription.php" class="link">Inscription</a>
+			<?php }else{ ?>
+
+			<a href="./deconnection.php" class="link">Deconnection</a>
+		<?php } ?>
 		</div>
 	</div>
 	
@@ -200,15 +208,14 @@
 			<div id="text_footer">
 				<h1>Poser vos questions et un conseiller vous repondra.</h1>
 				<div id="buttons_footer" class="mt-4">
-					<a href="#">► Aller au forum</a>
-					<a href="#">Foire aux questions</a>
+					<a href="./forum.php">► Aller au forum</a>
 				</div>
 			</div>
 		</div>
 
 		<div id="footer">
 			<div class="footer_flex">
-				<a href="#">Precarite.io</a>
+				<a href="../../">Precarite.io</a>
 			</div>
 			<div class="footer_flex text-right">
 				<a href="#">Privacy</a>
