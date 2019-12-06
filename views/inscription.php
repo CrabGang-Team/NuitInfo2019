@@ -25,7 +25,7 @@
 		<div class="form-part">
 			<div class="form" >
 				<h1>Inscription</h1>
-				<form clrForm clrLayout="Horizontal" method='post' action="./includes/connection.inc.php" onSubmit="return validate()">
+				<form clrForm clrLayout="Horizontal" method='post' action="./includes/inscription.inc.php" onSubmit="return validate()">
 			    <div>
 			      <clr-input-container>
 			        <label><clr-icon shape="user"></clr-icon></label>

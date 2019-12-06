@@ -49,7 +49,7 @@
 				<a href="./views/forum.php" class="link">Forum</a>
 				<a href="./views/chat.php" class="link">Chat</a>
 				<div id="dl_app">
-					<a href="#" class="mr-2">Connexion</a>
+					<a href="connexion.php" class="mr-2">Connexion</a>
 					<div id="separator"></div>
 					<a href="./views/inscription.php" class="ml-2">Inscription</a>
 				</div>
@@ -98,7 +98,7 @@
 
 		    $req = $db->query("SELECT * FROM post limit 5");
 
-		   
+
 
 		    while($row = $req->fetch(PDO::FETCH_ASSOC)){
 
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			<?php } ?>
-				
+
 			</div>
 
 		</div>
