@@ -113,6 +113,7 @@
 		                            </div>
 		                        </form>
 		                    </div>
+		                    <?php } ?>
 
 		                    <div class="article rounded mt-3 mb-3 p-3">
 		                        <h4 class="text-secondary text-center">Commentaires</h4>
@@ -145,7 +146,7 @@
 
 		                    </div>
 
-		                    <?php } ?>
+		                    
 
 
 
