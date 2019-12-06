@@ -4,6 +4,7 @@ if (isset($_SESSION['id'])) {
             //envoi d'un message
             $typeAlert="warning";
             $messageAlert="Vous êtes déjà connecté";
+
             header("Location: ../../");
             exit();
         } else if (isset($_POST['email'])) {
@@ -20,9 +21,11 @@ if (isset($_SESSION['id'])) {
             $id = $db->prepare('SELECT id FROM user WHERE email = ?' );
             $id->bindValue(1,$email);
             $id->execute();
+
             session_start();
             $_SESSION['id'] = $id->fetch(PDO::FETCH_ASSOC)["id"];
             header("Location: ../../");
+
           } else {
             echo 'Identifiants incorrects';
           }

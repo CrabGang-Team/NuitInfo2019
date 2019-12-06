@@ -10,12 +10,14 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Clarity CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+
 	<!--CLARITY ICONS STYLE-->
 	<link rel="stylesheet" href="https://unpkg.com/clarity-icons/clarity-icons.min.css">
 	<!--CLARITY ICONS DEPENDENCY: CUSTOM ELEMENTS POLYFILL-->
 	<script src="https://unpkg.com/@webcomponents/custom-elements/custom-elements.min.js"></script>
 	<!--CLARITY ICONS API & ALL ICON SETS-->
 	<script src="https://unpkg.com/clarity-icons/clarity-icons.min.js"></script>
+
 	<!-- Personal -->
 	<link rel="stylesheet" href="../src/style_inscription.css">
 	<title>Precarite.io</title>
@@ -26,6 +28,7 @@
 			<div class="form" >
 				<h1>Connexion</h1>
 				<form clrForm clrLayout="Horizontal" method='post' action="./includes/connexion.inc.php" onSubmit="return validate()">
+
 					<div>
 						<clr-input-container>
 							<label><clr-icon shape="envelope"></clr-icon></label>
@@ -48,6 +51,7 @@
 					</div>
 					<button class="btn btn-outline" type="submit">Valider</button>
 				</form>
+
 			</div>
 		</div>
 		<div class="image">

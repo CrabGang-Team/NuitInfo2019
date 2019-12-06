@@ -48,6 +48,13 @@
 			</a>
 			<div id="links" class="">
 				<a href="./views/forum.php" class="link">Forum</a>
+<<<<<<< HEAD
+				<a href="./views/chat.php" class="link">Chat</a>
+				<div id="dl_app">
+					<a href="connexion.php" class="mr-2">Connexion</a>
+					<div id="separator"></div>
+					<a href="./views/inscription.php" class="ml-2">Inscription</a>
+=======
 				<div id="dl_app" class="mt-1">
 					<?php if(!isset($_SESSION["id"])){ ?>
 						<a href="./views/connexion.php" class="mr-2">Connexion</a>
@@ -56,6 +63,7 @@
 					<?php }else{ ?>
 						<a href="./views/deconnection.php" class="mr-2">Deconnection</a>
 					<?php } ?>
+>>>>>>> 571d0ca53025f1f3a4aeb31f9d8948ea9c6955dd
 				</div>
 			</div>
 		</div>
@@ -104,7 +112,7 @@
 
 		    $req = $db->query("SELECT * FROM post limit 5");
 
-		   
+
 
 		    while($row = $req->fetch(PDO::FETCH_ASSOC)){
 
@@ -129,7 +137,7 @@
 					</div>
 				</div>
 			<?php } ?>
-				
+
 			</div>
 
 		</div>

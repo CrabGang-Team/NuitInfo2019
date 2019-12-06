@@ -28,6 +28,7 @@
 				<form clrForm clrLayout="Horizontal" method='post' action="./includes/connection.inc.php" onSubmit="return validate()">
 			    <div style="width: 100%;">
 			      <clr-input-container style="width: 100%;">
+
 			        <label><clr-icon shape="user"></clr-icon></label>
 			        <div class="clr-control-container" style="width: 100%;">
 			          <div class="clr-input-wrapper" style="width: 100%;">
