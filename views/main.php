@@ -9,7 +9,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
+
 	<!-- Clarity -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" /> -->
 
@@ -23,14 +23,14 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	
-	
+
+
 	<!-- Personal -->
 	<script src="./src/script.js"></script>
 
 	<!-- Icone -->
 	<link rel="icon" href="./assets/logo.ico"/>
-	
+
 	<title>Precarite.io</title>
 
 </head>
@@ -41,7 +41,7 @@
 			<div id="logo" class="">
 				<span><a href="#">Precarite.io</a></span>
 			</div>
-			
+
 			<a class="btn btn-primary" id="toggle-navbar" data-toggle="collapse" href="#navbar" role="button" aria-expanded="false" aria-controls="navbar">
 				<i class="fas fa-bars"></i>
 			</a>
@@ -51,7 +51,7 @@
 				<div id="dl_app">
 					<a href="#" class="mr-2">Connexion</a>
 					<div id="separator"></div>
-					<a href="#" class="ml-2">Inscription</a>
+					<a href="./views/inscription.php" class="ml-2">Inscription</a>
 				</div>
 			</div>
 		</div>
@@ -66,7 +66,7 @@
 			<a href="#" class="link">Inscription</a>
 		</div>
 	</div>
-	
+
 
 	<main>
 
@@ -92,7 +92,7 @@
 			<div class="row justify-content-center">
 
 
-			<?php 
+			<?php
 
 
 			try {
@@ -144,7 +144,7 @@
 
 
 			</div>
-			
+
 		</div>
 
 	</main>
@@ -170,8 +170,8 @@
 				<a href="#">Privacy</a>
 			</div>
 		</div>
-		
+
 	</footer>
 
 </body>
-</html>	
+</html>
