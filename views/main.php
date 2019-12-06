@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -47,11 +48,14 @@
 			</a>
 			<div id="links" class="">
 				<a href="./views/forum.php" class="link">Forum</a>
-				<a href="./views/chat.php" class="link">Chat</a>
-				<div id="dl_app">
-					<a href="#" class="mr-2">Connexion</a>
-					<div id="separator"></div>
-					<a href="./views/inscription.php" class="ml-2">Inscription</a>
+				<div id="dl_app" class="mt-1">
+					<?php if(!isset($_SESSION["id"])){ ?>
+						<a href="#" class="mr-2">Connexion</a>
+						<div id="separator"></div>
+						<a href="./views/inscription.php" class="ml-2">Inscription</a>
+					<?php }else{ ?>
+						<a href="./deconnection.php" class="mr-2">Deconnection</a>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
@@ -61,7 +65,6 @@
 	<div class="collapse" id="navbar">
 		<div class="card card-body">
 			<a href="#" class="link">Forum</a>
-			<a href="#" class="link">Chat</a>
 			<a href="#" class="link">Connexion</a>
 			<a href="#" class="link">Inscription</a>
 		</div>
@@ -79,7 +82,6 @@
 				<p>Vous êtes en état de précarité ?<br>Venez cherchez de l'aide parmis nos conseillers</p>
 				<div id="buttons_image">
 					<a href="./forum.php">► Aller au forum</a>
-					<a href="./chat.php">Posez vos questions</a>
 				</div>
 			</div>
 		</div>

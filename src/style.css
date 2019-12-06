@@ -46,7 +46,7 @@ header{
 	align-items: start;
 	justify-content: space-between;
 	align-content: center;
-	width: 450px;
+	width: 400px;
 	height: 50px; /* même hauteur que le logo */
 }
 #links a{
