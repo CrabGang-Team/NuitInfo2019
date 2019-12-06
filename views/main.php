@@ -94,55 +94,27 @@
 
 			<?php 
 
+			require __DIR__ . "/includes/db_connection.php";
 
-			try {
-			    $db = new PDO($dsn, "", $password);
-			} catch (PDOException $e) {
-			    echo 'Connexion échouée : ' . $e->getMessage();
-			}
+		    $req = $db->query("SELECT * FROM post");
 
-			?>
+		   
 
-
-
+		    while($row = $req->fetch(PDO::FETCH_ASSOC)){?>
 				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
 					<div class="card-content">
 						<div class="decoration"></div>
 						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
+							<span class="date"><?= $row["date"]; ?></span>
+							<h6 class="title pt-1"><?= $row["titre"]; ?></h6>
+							<div class="resume"><?= $row["content"]; ?></div>
 							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
+							<a href="./views/post.php?id=<?= $row['id']; ?>" class="read-more px-4 py-2">Read More</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
-					<div class="card-content">
-						<div class="decoration"></div>
-						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
-							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
-					<div class="card-content">
-						<div class="decoration"></div>
-						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
-							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
-						</div>
-					</div>
-				</div>
-
-
+			<?php } ?>
+				
 			</div>
 			
 		</div>
