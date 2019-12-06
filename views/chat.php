@@ -26,12 +26,12 @@
 	
 	
 	<!-- Personal -->
-	<script src="./src/script.js"></script>
+	<script src="../src/script.js"></script>
 
 	<!-- Icone -->
-	<link rel="icon" href="./assets/logo.ico"/>
+	<link rel="icon" href="../assets/logo.ico"/>
 	
-	<title>Precarite.io</title>
+	<title>Chat - Precarite.io</title>
 
 </head>
 <body>
@@ -39,15 +39,15 @@
 	<header>
 		<div id="content_header" class="">
 			<div id="logo" class="">
-				<span><a href="#">Precarite.io</a></span>
+				<span><a href="../index.php">Precarite.io</a></span>
 			</div>
 			
 			<a class="btn btn-primary" id="toggle-navbar" data-toggle="collapse" href="#navbar" role="button" aria-expanded="false" aria-controls="navbar">
 				<i class="fas fa-bars"></i>
 			</a>
 			<div id="links" class="">
-				<a href="./views/forum.php" class="link">Forum</a>
-				<a href="./views/chat.php" class="link">Chat</a>
+				<a href="./forum.php" class="link">Forum</a>
+				<a href="#" class="link">Chat</a>
 				<div id="dl_app">
 					<a href="#" class="mr-2">Connexion</a>
 					<div id="separator"></div>
@@ -61,7 +61,6 @@
 	<div class="collapse" id="navbar">
 		<div class="card card-body">
 			<a href="#" class="link">Forum</a>
-			<a href="#" class="link">Chat</a>
 			<a href="#" class="link">Connexion</a>
 			<a href="#" class="link">Inscription</a>
 		</div>
@@ -70,82 +69,7 @@
 
 	<main>
 
-		<div id="help">?</div>
-
-		<div id="image_header">
-			<img src="../assets/image.jpg" alt="main image header">
-			<div id="caption_image">
-				<h1>Precarite.io</h1>
-				<p>Vous êtes en état de précarité ?<br>Venez cherchez de l'aide parmis nos conseillers</p>
-				<div id="buttons_image">
-					<a href="#">► Aller au forum</a>
-					<a href="#">Foire aux questions</a>
-				</div>
-			</div>
-		</div>
-
-
-
-		<h1 id="title_content">Nos derniers postes</h1>
-
-		<div class="container-fluid pt-4 mb-5">
-			<div class="row justify-content-center">
-
-
-			<?php 
-
-
-			try {
-			    $db = new PDO($dsn, "", $password);
-			} catch (PDOException $e) {
-			    echo 'Connexion échouée : ' . $e->getMessage();
-			}
-
-			?>
-
-
-
-				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
-					<div class="card-content">
-						<div class="decoration"></div>
-						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
-							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
-					<div class="card-content">
-						<div class="decoration"></div>
-						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
-							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
-					<div class="card-content">
-						<div class="decoration"></div>
-						<div class="content">
-							<span class="date">28 August 2019</span>
-							<h6 class="title pt-1">Lorem Ipsum Dolor</h6>
-							<div class="resume">Dolore veniam sit sunt culpa commodo officia dolor adipisicing dolore esse sint exercitation velit ut veniam in ad quis ut sunt sit elit eiusmod in eu laboris.</div>
-							<br>
-							<a href="#" class="read-more px-4 py-2">Read More</a>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-			
-		</div>
+		
 
 	</main>
 
