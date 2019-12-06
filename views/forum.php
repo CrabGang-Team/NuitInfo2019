@@ -84,7 +84,7 @@
 
 		    while($row = $req->fetch(PDO::FETCH_ASSOC)){
 
-				$categories = $db->prepare("SELECT c.titre from categorie as c INNER JOIN post_categorie as pc ON c.id = pc.id WHERE pc.id_Post = ?");
+				$categories = $db->prepare("SELECT c.titre from categorie as c INNER JOIN post_categorie as pc ON c.id = pc.id WHERE pc.id_Post = ? limit 2");
 				$categories->bindValue(1, $row["id"], PDO::PARAM_INT);
 				$categories->execute();
 				?>

@@ -78,8 +78,8 @@
 				<h1>Precarite.io</h1>
 				<p>Vous êtes en état de précarité ?<br>Venez cherchez de l'aide parmis nos conseillers</p>
 				<div id="buttons_image">
-					<a href="#">► Aller au forum</a>
-					<a href="#">Foire aux questions</a>
+					<a href="./forum.php">► Aller au forum</a>
+					<a href="./chat.php">Posez vos questions</a>
 				</div>
 			</div>
 		</div>
@@ -102,7 +102,7 @@
 
 		    while($row = $req->fetch(PDO::FETCH_ASSOC)){
 
-				$categories = $db->prepare("SELECT c.titre from categorie as c INNER JOIN post_categorie as pc ON c.id = pc.id WHERE pc.id_Post = ?");
+				$categories = $db->prepare("SELECT c.titre from categorie as c INNER JOIN post_categorie as pc ON c.id = pc.id WHERE pc.id_Post = ? limit 2");
 				$categories->bindValue(1, $row["id"], PDO::PARAM_INT);
 				$categories->execute();
 				?>
@@ -137,8 +137,8 @@
 			<div id="text_footer">
 				<h1>Poser vos questions et un conseiller vous repondra.</h1>
 				<div id="buttons_footer" class="mt-4">
-					<a href="#">► Aller au forum</a>
-					<a href="#">Foire aux questions</a>
+					<a href="./forum.php">► Aller au forum</a>
+					<a href="./chat.php">Posez vos questions</a>
 				</div>
 			</div>
 		</div>
