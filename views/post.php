@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,7 +44,7 @@
 				<i class="fas fa-bars"></i>
 			</a>
 			<div id="links" class="">
-				<a href="#" class="link">Forum</a>
+				<a href="./forum.php" class="link">Forum</a>
 				<a href="./chat.php" class="link">Chat</a>
 				<div id="dl_app">
 					<a href="#" class="mr-2">Connexion</a>
@@ -96,16 +98,11 @@
 		                        </div>
 		                    </div>
 
-
+							<?php if(isset($_SESSION["id"])){ ?>
 		                    <div class="article rounded mt-3 pt-3">
 		                        <h4 class="text-secondary text-center">Poster un commentaire</h4>
 		                        <hr class="separatorCommentaire ml-5 mr-5" >
-		                        <form action="includes/newCommentaire.inc.php?id=<?php echo $_GET['id']; ?>" method="post"> <!-- pour l'id, il faut remettre celui de l'article -->
-		                            <div class="form-group row justify-content-center">
-		                                <div class="col-10">
-		                                    <input type="text" class="form-control mt-2" placeholder="Nom" name="nom" maxlength="30" required>
-		                                </div>
-		                            </div>
+		                        <form action="./includes/newCommentaire.php?id=<?php echo $_GET['id']; ?>" method="post"> <!-- pour l'id, il faut remettre celui de l'article -->
 		                            <div class="form-group row justify-content-center">
 		                                <div class="col-10">
 		                                    <textarea class="form-control" name="commentaire" style="width:100%;min-height:150px;" placeholder="Commentaire ..." required></textarea>
@@ -148,6 +145,8 @@
 
 		                    </div>
 
+		                    <?php } ?>
+
 
 
 		                </div>
@@ -169,14 +168,10 @@
 		                            $req->execute();
 		                            while($result = $req->fetch(PDO::FETCH_ASSOC)){
 		                                echo '<div class="card-content mb-3 rounded">
-		                                <div class="card-img">
-		                                <img src="'.$result['image'].'">
-		                                <span class="ml-3"><h4>'.$result['date'].'</h4></span>
-		                                </div>
 		                                <div class="card-desc">
 		                                <h5>'.$result['titre'].'</h5>
 		                                <div>'.$result['content'].'</div>
-		                                <a href="./articleFull.php?id='.$result['id'].'" class="btn-card">Lire</a>
+		                                <a href="./post.php?id='.$result['id'].'" class="btn-card">Lire</a>
 		                                </div>
 		                                </div>';
 		                            }

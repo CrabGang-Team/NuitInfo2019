@@ -229,6 +229,14 @@ header{
 	color: white;
 	text-decoration: none;
 }
+.label_article{
+	border-radius: 50px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	color: rgb(230,230,230);
+	background: linear-gradient(135deg, #4376A1, #23487B);
+	padding: 5px 10px;
+}
 
 
 

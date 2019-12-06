@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -56,7 +58,7 @@
 
 	<div class="collapse" id="navbar">
 		<div class="card card-body">
-			<a href="#" class="link">Chat</a>
+			<a href="./chat.php" class="link">Chat</a>
 			<a href="#" class="link">Connexion</a>
 			<a href="#" class="link">Inscription</a>
 		</div>
@@ -64,6 +66,49 @@
 	
 
 	<main>
+
+
+		<h1 id="title_content">Tous les postes</h1>
+
+		<div class="container-fluid pt-4 mb-5">
+			<div class="row justify-content-center">
+
+
+			<?php
+
+			require __DIR__ . "/includes/db_connection.php";
+
+		    $req = $db->query("SELECT * FROM post");
+
+		   
+
+		    while($row = $req->fetch(PDO::FETCH_ASSOC)){
+
+				$categories = $db->prepare("SELECT c.titre from categorie as c INNER JOIN post_categorie as pc ON c.id = pc.id WHERE pc.id_Post = ?");
+				$categories->bindValue(1, $row["id"], PDO::PARAM_INT);
+				$categories->execute();
+				?>
+
+				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
+					<div class="card-content">
+						<div class="decoration"></div>
+						<div class="content">
+							<span class="date"><?= $row["date"]; ?></span>
+							<h6 class="title pt-1"><?= $row["titre"]; ?></h6>
+							<?php while($label = $categories->fetch(PDO::FETCH_ASSOC)){ ?>
+								<span class="label_article"><?= $label["titre"]; ?></span>
+							<?php } ?>
+							<div class="resume mt-2"><?= $row["content"]; ?></div>
+							<br>
+							<a href="./post.php?id=<?= $row['id']; ?>" class="read-more px-4 py-2">Read More</a>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+				
+			</div>
+
+		</div>
 
 		
 

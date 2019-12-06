@@ -96,18 +96,27 @@
 
 			require __DIR__ . "/includes/db_connection.php";
 
-		    $req = $db->query("SELECT * FROM post");
+		    $req = $db->query("SELECT * FROM post limit 5");
 
 		   
 
-		    while($row = $req->fetch(PDO::FETCH_ASSOC)){?>
+		    while($row = $req->fetch(PDO::FETCH_ASSOC)){
+
+				$categories = $db->prepare("SELECT c.titre from categorie as c INNER JOIN post_categorie as pc ON c.id = pc.id WHERE pc.id_Post = ?");
+				$categories->bindValue(1, $row["id"], PDO::PARAM_INT);
+				$categories->execute();
+				?>
+
 				<div class="col-lg-8 col-xl-5 col-md-8 col-11 card mb-5 mx-md-5">
 					<div class="card-content">
 						<div class="decoration"></div>
 						<div class="content">
 							<span class="date"><?= $row["date"]; ?></span>
 							<h6 class="title pt-1"><?= $row["titre"]; ?></h6>
-							<div class="resume"><?= $row["content"]; ?></div>
+							<?php while($label = $categories->fetch(PDO::FETCH_ASSOC)){ ?>
+								<span class="label_article"><?= $label["titre"]; ?></span>
+							<?php } ?>
+							<div class="resume mt-2"><?= $row["content"]; ?></div>
 							<br>
 							<a href="./views/post.php?id=<?= $row['id']; ?>" class="read-more px-4 py-2">Read More</a>
 						</div>
